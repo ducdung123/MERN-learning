@@ -1,4 +1,7 @@
-export const apiUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/api' :  'someUrl';
+export const apiUrl = 
+process.env.NODE_ENV !== 'production' ? 
+'https://young-reaches-78508.herokuapp.com' :  'https://young-reaches-78508.herokuapp.com/';
+// http://localhost:5000/api
 export const LOCAl_STORAGE_TOKEN_NAME = 'learnit-mern';
 
 export const POST_LOADED_FAILE = 'POST_LOADED_FAILE';
