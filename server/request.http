@@ -1,0 +1,50 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "ducdung",
+    "password": "17122001"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "ddung13",
+    "password": "17122001"
+}
+
+###
+POST  http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA4ZmQ2OGI3YTA5MDY4Njg3ZWQ4MTUiLCJpYXQiOjE2MjgwMDQ5NTV9.ard0n9jCHLiENGfIIyWIELn2tUGAV4u3i762UnXXgyM
+
+{
+    "title": "JS advance",
+    "description": "hehe",
+    "url": "www.w3schools.com/jsref/jsref_startswith.asp",
+    "status": "LEARNING"
+}
+
+###
+GET  http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA4ZmQ2OGI3YTA5MDY4Njg3ZWQ4MTUiLCJpYXQiOjE2MjgwMDY3MzV9.71qvem9-2attxPH5ts-4ys4TYXS9DaretjtI0x2LMmA
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA4ZmQyOGMzMTFhODNkM2NmNDRlYmYiLCJpYXQiOjE2MjgwMDcxNDl9.YKywBppjOhWu8DiHmlVT1trqvoDVWPOB6_einxrzlZw
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA4ZmQ2OGI3YTA5MDY4Njg3ZWQ4MTUiLCJpYXQiOjE2MjgwMDY3MzV9.71qvem9-2attxPH5ts-4ys4TYXS9DaretjtI0x2LMmA
+
+###
+PUT  http://localhost:5000/api/posts/61092481aa6aa14ed85cfbca
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA4ZmQyOGMzMTFhODNkM2NmNDRlYmYiLCJpYXQiOjE2MjgwMTIxMzl9.o8C_Qdo4PUf5SjDQn3Z4No91BrQ964pTHKo53mt7X-g
+
+{
+    "title": "HTML ne",
+    "description": "must to learn new",
+    "url": "www.w3schools.com/jsref/jsref_startswith.asp",
+    "status": "LEARNED"
+}
+
+###
+DELETE   http://localhost:5000/api/posts/61092481aa6aa14ed85cfbca
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA4ZmQ2OGI3YTA5MDY4Njg3ZWQ4MTUiLCJpYXQiOjE2MjgwMDY3MzV9.71qvem9-2attxPH5ts-4ys4TYXS9DaretjtI0x2LMmA
